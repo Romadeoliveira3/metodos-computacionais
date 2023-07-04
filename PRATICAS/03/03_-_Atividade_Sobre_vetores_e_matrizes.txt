@@ -1,0 +1,7 @@
+1) Construa um programa que preenche um vetor de inteiros de 100 números, colocando 0 nas posições pares e 1 nas ímpares.
+2) Construa um programa que lê, soma e imprime o resultado da soma de um vetor de inteiros de 10 posições.
+3) Construa um programa que multiplique os valores de um vetor de reais de 20 posições pelos valores de um outro vetor de reais de 20 posições. O primeiro vetor deve ser inicializado com valores crescentes a partir de 1 e o segundo vetor com valores decrescentes a partir de 20. Os resultados das multiplicações devem ser armazenados num terceiro vetor.
+4) Leia um vetor de 16 posições e troque os 8 primeiros valores pelos 8 últimos e vice-versa. Escreva ao final o vetor obtido.
+5) Construa um algoritmo que efetue e apresente o resultado da soma entre duas matrizes 3 x 5. Inicialize a matriz com valores quaisquer e imprima o resultado na tela.
+6) Faça um programa que multiplica uma matriz 3 x 3 de inteiros por um escalar k e imprima o resultado na tela. O usuário deve fornecer os valores da matriz e de k.
+7) Leia uma matriz 20 x 20. Leia também um valor X. O programa deverá fazer uma busca desse valor na matriz e, ao final escrever a localização (linha e coluna) ou uma mensagem de “não encontrado”.
