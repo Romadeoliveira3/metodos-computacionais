@@ -1,0 +1,10 @@
+Início
+  Solicitar ao usuário que insira a primeira nota bimestral (N1)
+  Solicitar ao usuário que insira a segunda nota bimestral (N2)
+  Solicitar ao usuário que insira a terceira nota bimestral (N3)
+  Solicitar ao usuário que insira a quarta nota bimestral (N4)
+  
+  Calcular a média aritmética anual (MA) usando a fórmula: MA = (N1 + N2 + N3 + N4) / 4
+  
+  Exibir a média aritmética anual (MA)
+Fim
