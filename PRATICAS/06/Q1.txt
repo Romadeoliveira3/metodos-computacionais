@@ -1,0 +1,12 @@
+(1) O que o programa está fazendo?
+
+Esta carregando através do interpretador python o modulo Memory_profiler e imprimirá informações detalhadas sobre o uso de memória da função 'big_array()', incluindo a memória usada em cada linha de código.
+
+(2) Interprete a saída obtida pelo uso do Memory Profiler. O que essa saída está mostrando?
+
+A primeira coluna representa a linha do codigo que foi registrado, a segunda linha ("Mem usage") representa o uso da memoria pelo Python depois de executar a linha. A terceira coluna ("Increment") representa a diferença de memoria da linha atual com relação a anterior. e a ultima coluna ("Line Contents") mostra a linha do codigo que esta sendo registrada.
+
+(3) Na sua opinião, a dinâmica do consumo de memória apresentado faz sentido?
+Justifique.
+
+Faz sentido sim. Pois pode atuar como monitoramento de possiveis vazamentos de memória ou otimizar o uso de memória em um programa. Permitindo que desenvolvedores identifiquem áreas problemáticas em termos de consumo de memória, podendo então analisar e otimizar essas partes específicas do código.

@@ -1,0 +1,7 @@
+Cada aluno (atividade individual) deve elaborar, escrever e enviar uma proposta de projeto para a disciplina, descrevendo em detalhes qual projeto gostaria de desenvolver no curso de métodos computacionais.
+
+Além de descrever o que deve ser desenvolvido, é necessário especificar quais os requisitos do projeto, os quais devem  prever, obrigatoriamente, o uso de listas encadeadas, pilhas, filas e algoritmos de ordenação e busca.
+
+Além disso, também é necessário definir quais os entregáveis do projeto.
+
+Essa proposta de projeto deve ser entregue em formato de documento e de slides pelo Classroom. Os slides deverão ser apresentados na quarta feira 12/07/2023.
