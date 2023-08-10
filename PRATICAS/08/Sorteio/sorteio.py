@@ -13,13 +13,16 @@ def sorteio(nomes, n, nome_sorteado):
       O nome do vencedor do prêmio.
     """
 
+    # Iniciar com o concorrente sorteado
     contador = nomes.index(nome_sorteado)
-
+    # Execute até restar apenas um concorrente;
     while len(nomes) > 1:
+        # Calcule o próximo índice a ser removido
         contador = (contador + n) % len(nomes)
+        # Remova e mostre o concorrente eliminado
         nome_atual = nomes.pop(contador)
         print(f'{nome_atual} foi eliminado.')
-
+    # Ultimo concorrente é o vencedor
     vencedor = nomes[0]
 
     return vencedor
