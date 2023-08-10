@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Falta</title>
+</head>
+<body>
+    <h1>Add Falta</h1>
+    <form method="POST">
+        <label for="nome">Selecione a disciplina:</label>
+        <select id="nome" name="nome">
+            {% for aula in aulas %}
+                <option value="{{ aula[0] }}" {% if aula[0] == selected_nome %}selected{% endif %}>{{ aula[0] }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <label for="faltas">Faltas: {{ faltas }}</label>
+        <br>
+        <label for="faltas_restantes">Faltas Restantes: {{ faltas_restantes }}</label>
+        <br>
+        <input type="submit" value="Adicionar Falta">
+    </form>
+</body>
+</html>

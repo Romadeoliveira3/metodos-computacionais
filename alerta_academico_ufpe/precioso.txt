@@ -1,0 +1,36 @@
+@main.route("/add_falta", methods=["GET", "POST"])
+def add_falta():
+    db = get_db()
+    cur = db.cursor()
+    if request.method == "GET":
+        cur.execute("SELECT nome FROM aulas")
+        aulas = cur.fetchall()
+        nome = request.args.get('nome', default=None, type=str)
+        if nome is not None:
+            cur.execute("SELECT * FROM aulas WHERE nome = ?", (nome,))
+            aula_data = cur.fetchone()
+            if aula_data is not None:
+                aula = Aula(*aula_data)
+                faltas = aula.aulas_faltadas
+                faltas_restantes = (aula.total_aulas * 0.25) - aula.aulas_faltadas
+            else:
+                faltas = 0
+                faltas_restantes = 0
+        else:
+            faltas = 0
+            faltas_restantes = 0
+        return render_template("add_falta.html", aulas=aulas, selected_nome=nome, faltas=faltas, faltas_restantes=faltas_restantes)
+    else:
+        nome = request.form["nome"]
+        cur.execute("SELECT * FROM aulas WHERE nome = ?", (nome,))
+        aula_data = cur.fetchone()
+        if aula_data is not None:
+            aula = Aula(*aula_data)
+            aula.adicionar_falta()
+            cur.execute("""
+                UPDATE aulas
+                SET aulas_faltadas = ?
+                WHERE nome = ?
+            """, (aula.aulas_faltadas, aula.nome))
+            db.commit()
+        return redirect(url_for("main.home"))
