@@ -1,3 +1,5 @@
+import sys
+sys.path.append("./models")
 
 from flask import Flask
 from config import MODELS_DIR
